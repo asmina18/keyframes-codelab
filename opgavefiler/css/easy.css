@@ -10,9 +10,12 @@ text-align: center;
 border-radius: 50px;
 
 }
-
+/* animation-name: popUp;  eto popUp   imya @keyfreams poetomu ti polzueshsya nazvanie esli ti hochesh chto to izmenit */
 .pop:hover{
- 
+  animation-name: popUp;
+  animation-duration: 400ms;
+  animation-fill-mode:both;
+  animation-timing-function: ease;
 }
 
 .popTwo{
@@ -25,14 +28,17 @@ border-radius: 50px;
 }
 
 .popTwo:hover{
-
+  animation-name:popUpDown ;
+  animation-duration: 400ms;
+  animation-fill-mode:both;
+  animation-timing-function: ease;
 }
 
 
 
 
 .popThree{
-  background-color: rgb(7, 90, 25);
+background-color: rgb(7, 90, 25);
 color:antiquewhite;
 width: 100px;
 height: 100px;
@@ -41,9 +47,20 @@ border-radius: 50px;
 }
 
 .popThree:hover{
- 
+  animation-name:popUpDown ;
+  animation-iteration-count:infinite;
   animation-duration: 500ms;
-  animation-timing-function: ease;
+   animation-timing-function: ease; 
+
+}
+
+@keyframes popUp{
+from{
+  transform: scale(100%);
+}
+to{
+  transform: scale(110%);
+}
 
 }
 
